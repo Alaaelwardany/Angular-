@@ -1,0 +1,19 @@
+
+          <!-- shopping card dropdown -->
+          <!-- dropdown--opened to open --> 
+          <!-- " -->
+          <div class="dropdown dropdown--left" [ngClass]="{'dropdown--opened ':cartisopen}">
+
+              <!-- header -->
+              <div class="dropdown__header" (click)="cartisopen = !cartisopen">
+                 <ng-content select=".header">
+
+                 </ng-content>
+              </div>
+              <!-- body -->
+              <div class="dropdown__body">
+                <ng-content select=".body">
+
+                </ng-content>
+              </div>
+           </div>
